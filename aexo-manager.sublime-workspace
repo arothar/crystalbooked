@@ -1,0 +1,818 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"codigo",
+				"codigoParte"
+			],
+			[
+				"M_De",
+				"M_Despiece"
+			],
+			[
+				"arbol",
+				"arbolInsumo"
+			],
+			[
+				"M_",
+				"M_Insumo"
+			],
+			[
+				"jerar",
+				"jerarquia"
+			],
+			[
+				"idParte",
+				"idParte"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"idPR",
+				"idParteTemporal"
+			],
+			[
+				"idparte",
+				"idPartePadre"
+			],
+			[
+				"idpart",
+				"idParte"
+			],
+			[
+				"nuevo",
+				"nuevoHijo"
+			],
+			[
+				"M_Des",
+				"M_DespieceEntidad"
+			],
+			[
+				"key",
+				"keyword"
+			],
+			[
+				"TXT",
+				"txtParte"
+			],
+			[
+				"M_D",
+				"M_DespieceEntidad"
+			],
+			[
+				"parte",
+				"partePadre"
+			],
+			[
+				"idPar",
+				"idPartePadre"
+			],
+			[
+				"idpad",
+				"idPadreAnterior"
+			],
+			[
+				"VAR",
+				"var_dump"
+			],
+			[
+				"arr",
+				"arrPadre"
+			],
+			[
+				"un",
+				"unDespiece"
+			],
+			[
+				"jera",
+				"jerarquiaRoot"
+			],
+			[
+				"padre",
+				"padre"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"int",
+				"intMes"
+			],
+			[
+				"get",
+				"getFullYear"
+			],
+			[
+				"medios",
+				"mediosDePago"
+			],
+			[
+				"notifi",
+				"notificaciones"
+			],
+			[
+				"ESTADO",
+				"ESTADOPAGO_PENDAUTORIZAR"
+			],
+			[
+				"month",
+				"month_int"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"idCom",
+				"idComprobanteCpr"
+			],
+			[
+				"idComproba",
+				"idComprobante"
+			],
+			[
+				"idComp",
+				"idComprobante"
+			],
+			[
+				"idC",
+				"idComprobanteVta"
+			],
+			[
+				"id",
+				"idTipoComprobante"
+			],
+			[
+				"json",
+				"json_encode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/views/view_clientesDetalle.php",
+			"settings":
+			{
+				"buffer_size": 8554,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/controllers/clientes.php",
+			"settings":
+			{
+				"buffer_size": 4041,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/m_cliente.php",
+			"settings":
+			{
+				"buffer_size": 1497,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/js/js_clientesDetalle.js",
+			"settings":
+			{
+				"buffer_size": 5262,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "			\n			if (latitud != 0){\n				var myLatlng = new google.maps.LatLng(latitud,longitud);\n				var mapOptions = {\n					zoom: 8,\n					center: myLatlng\n				}\n				var map = new google.maps.Map(document.getElementById('map-ubicacionCliente'), mapOptions);\n				marcarEnMapa(myLatlng,map);\n			}else{\n				var position = new google.maps.LatLng(-37, -423);\n				var mapOptions = {\n					center: position,\n					zoom: 4\n				}\n				var map = new google.maps.Map(document.getElementById('map-ubicacionCliente'), mapOptions);\n			}",
+			"settings":
+			{
+				"buffer_size": 509,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"idnde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"come",
+				"Toggle Comment"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"ocme",
+				"Toggle Comment"
+			],
+			[
+				"id",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"idnte",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"iden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ident",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"comen",
+				"Toggle Comment"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"ide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"COMM",
+				"Toggle Comment"
+			],
+			[
+				"COM",
+				"Toggle Comment"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indente",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/arothar/aexo_bk/assets/aexo/js/address-debug.js",
+		"/D/arothar/aexo_bk/assets/aexo/js/address.js",
+		"/D/Working/php/www/aexo-manager/application/models/m_categoriaiva.php",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/js/js_clientesDetalle.js",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_clientesDetalle.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_movimientoList.php",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/css/styles.css",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_cliente.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_mediosCobroList.php",
+		"/E/Fuentes/sitios-php/aexo/assets/aexo/js/mapa.js",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/js/application.js",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/demo/demo-datatables.js",
+		"/E/Fuentes/sitios-php/aexo/application/views/mapaView.php",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/tables-data.htm",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/clientes.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_clientesList.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_template.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/mediosDeCobro.php",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/ui-tabs.htm",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/js/application.js",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_partesList.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_mediosPagoList.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_tipocliente.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_provincia.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_parte.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/partes.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_partesDetalle.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/despiece.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/partial/view_modalPartesImportar.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_insumoArbol.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_despieceArbol.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/ajaxTemplate.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_despiece.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_insumo.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/insumos.php",
+		"/C/Users/Alejandro/Dropbox/Personales/Facu/Paradigmas de Programacion/Tp Integrador.hs",
+		"/C/Users/Alejandro/Dropbox/Apps/1Password/1Password.agilekeychain/data/default/encryptionKeys.js",
+		"/C/Users/Alejandro/Dropbox/Apps/1Password/1Password.agilekeychain/data/default/contents.js",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_insumoentidad.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_despieceParte.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_productosDetalle.php",
+		"/C/Users/Alejandro/AppData/Local/Temp/fz3temp-1/config_user.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_producto.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/config/config_user.php",
+		"/C/Users/Alejandro/Dropbox/Personales/Facu/Paradigmas de Programacion/Ejercicio_1.10.hs",
+		"/C/Users/Alejandro/Dropbox/Personales/Facu/Paradigmas de Programacion/Ejercicio",
+		"/C/Users/Alejandro/Dropbox/Personales/Facu/Paradigmas de Programacion/1.10.hs",
+		"/C/Users/Alejandro/Dropbox/Personales/Facu/Paradigmas de Programacion/Ejercicio 1.10",
+		"/C/Users/Alejandro/Dropbox/Personales/Facu/Paradigmas de Programacion/Ejercicio 1.10.hs",
+		"/C/ansicon/ansicon.exe",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_despieceentidad.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_insumosList.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/config/database.php",
+		"/E/Fuentes/sitios-php/aexo-manager/system/database/drivers/mysqli/mysqli_result.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/config/database_remote.php",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/demo/demo-modals.js",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/ui-modals.htm",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/productos.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_despieceEntidad.php",
+		"/C/Users/Alejandro/AppData/Local/Temp/fz3temp-1/database.php",
+		"/E/Fuentes/sitios-php/aexo-manager/system/database/DB_driver.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/libraries/Datatables.php",
+		"/E/Fuentes/sitios-php/aexo-manager/system/database/drivers/mysqli/mysqli_driver.php",
+		"/E/Fuentes/sitios-php/ProdeLucho/dev/application/config/hooks.php",
+		"/E/Fuentes/sitios-php/ProdeLucho/dev/application/config/constants.php",
+		"/E/Fuentes/sitios-php/prodetgv/application/config/constants.php",
+		"/E/Fuentes/sitios-php/melamud/trunk/application/config/constants.php",
+		"/E/Fuentes/sitios-php/2014/application/config/user_agents.php",
+		"/E/Fuentes/sitios-php/prodetgv/application/config/config.php",
+		"/E/Fuentes/sitios-php/ProdeLucho/dev/application/config/config.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/config/config.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_test.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/flujoCaja.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_productosList.php",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/form-components.htm",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/demo/demo-formcomponents.js",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/plugins/form-typeahead/typeahead.min.js",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/plugins/form-typeahead/typeahead.less",
+		"/C/Users/Alejandro/Desktop/prueba.html",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_mediopago.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_productoList.php",
+		"/E/Fuentes/sitios-php/ProdeLucho/dev/application/views/view_fasegrupo.php",
+		"/E/Fuentes/Aexo/Dev/AexoManagerSVN/AexoManager/Views/Despiece/DespieceTree.cshtml",
+		"/E/Fuentes/sitios-php/ProdeLucho/dev/assets/css/estilos.css",
+		"/E/Fuentes/sitios-php/ProdeLucho/dev/application/views/view_prode.php",
+		"/E/Fuentes/Aexo/Dev/AexoManagerSVN/AexoManager/Views/Shared/_Template.cshtml",
+		"/E/Fuentes/Aexo/Dev/AexoManagerSVN/AexoManager/Views/Shared/_Layout.cshtml",
+		"/E/Fuentes/sitios-php/diesel/index.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_mediocobro.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_mediosPagoDetalle.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/mediosDePago.php",
+		"/C/Users/Alejandro/AppData/Local/Temp/Temp1_tutorial_datatables.zip/tutorial_datatables/application/controllers/subscriber.php",
+		"/C/Users/Alejandro/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_tipocomprobante.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_tipomovimiento.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_movimientosaldomes.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/controllers/movimiento.php",
+		"/E/Fuentes/sitios-php/PuertoPago/bd/masohost_billdev.sql",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_movimientoDetalle.php",
+		"/E/Fuentes/sitios-php/PuertoPago/class/config.inc.php",
+		"/E/Fuentes/sitios-php/PuertoPago/clases/user.php",
+		"/E/Fuentes/sitios-php/PuertoPago/class/Database.class.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_movimiento.php",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/plugins/datatables/jquery.dataTables.js",
+		"/C/Users/Alejandro/Desktop/jquery.dataTables.js",
+		"/E/Fuentes/sitios-php/aexo-manager/assets/plugins/datatables/dataTables.css",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/ui-labelsbadges.htm",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_calendarCaja.php",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/demo/demo.js",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/plugins/form-toggle/toggles.css",
+		"/E/Fuentes/sitios-php/aexo-manager/application/config/constants.php",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/demo/demo-modals.js",
+		"/E/Fuentes/sitios-php/aexo-manager/HTML/tables-editable.htm",
+		"/E/Fuentes/sitios-php/puertocristal/puertopago/mailform.php",
+		"/E/Fuentes/sitios-php/puertocristal/crystalBooked/clases/config.inc.php",
+		"/E/Fuentes/sitios-php/puertocristal/crystalBooked/clases/Email.class.php",
+		"/E/Fuentes/sitios-php/ftp/view_movimientoList.php",
+		"/E/Fuentes/sitios-php/ftp/view_mediosCobroList.php",
+		"/E/Fuentes/sitios-php/ftp/view_mediosPagoList.php",
+		"/E/Fuentes/sitios-php/ftp/config.inc.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_mediosCobroDetalle.php",
+		"/E/Fuentes/sitios-php/ftp/view_mediosCobroDetalle.php",
+		"/E/Fuentes/sitios-php/ftp/mediosDeCobro.php",
+		"/E/Fuentes/sitios-php/ftp/wp-config.php",
+		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_notificacion.php",
+		"/E/Fuentes/sitios-php/jquery-templates/jquery-tmpl-master/demos/samplesCore/each.html",
+		"/E/Fuentes/sitios-php/aexo-manager/application/core/MY_Controller.php",
+		"/C/Users/Alejandro/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"E:\\Fuentes\\sitios-php\\aexo-manager",
+			"E:\\Fuentes\\sitios-php\\aexo-manager\\application\\views",
+			"E:\\Fuentes\\sitios-php\\aexo-manager",
+			"E:\\Fuentes\\sitios-php\\aexo-manager\\assets\\js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tbl_provincia",
+			"min-height",
+			"infoWindow",
+			"infowindow",
+			"infoWindow",
+			"searchLocationsNear",
+			"addListener",
+			"searchLocations",
+			"tab",
+			"tabs",
+			"tab-content",
+			"idTipoMedio",
+			"page-content",
+			"4172px",
+			"min-height: 4172px;",
+			"parte",
+			"Parte",
+			"parte",
+			"idTipoCliente",
+			"tbl_tipoCliente",
+			"idtipoMovimiento",
+			"tbl_tipoMovimiento",
+			"txtCodigo",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"partes",
+			"idParte",
+			"txtIdParte",
+			"idcliente",
+			"Parte",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"partes",
+			"idParte",
+			"tbl_parte",
+			"idParte",
+			"M_Parte",
+			"bootbox",
+			"$.ajax",
+			"bootbox",
+			"box",
+			"alert",
+			"message",
+			"});\n",
+			"parte",
+			"$ajax",
+			"idPartePadre",
+			"guardarHijoDeInsumo",
+			"obtenerDespiece",
+			"sp_DespieceHijosXidDespiece",
+			"obtenerDespieceXidDespiece",
+			"idDespiecePadre",
+			"agregarHijo",
+			"btnAgregar",
+			"unDespiece",
+			"M_DespieceEntidad",
+			"M_InsumoEntidad",
+			"M_DespieceEntidad",
+			"buildItemInsumo",
+			"arbolDespiece",
+			"idDespiece",
+			"dtPartes",
+			"idParte",
+			"free_result",
+			"p_",
+			"obtenerDespiece",
+			"construirArbol",
+			"obtenerArbol",
+			"buildItemInsumo",
+			"next_result",
+			"idProducto",
+			"$unDespiece->idProducto = $item->idProducto;",
+			"idProducto",
+			"modelo",
+			"tbl_despiece",
+			"modelo",
+			"Despiece",
+			"idDespiece",
+			"dtPartes",
+			"modal",
+			"Modal-dialog",
+			"Custom title",
+			"modal-dialog",
+			"I am a custom dialog",
+			"Custom title",
+			"db",
+			"db_connect",
+			"mysql_connect",
+			"connect",
+			"link",
+			"arbolDeParte",
+			"json_encode",
+			"example-countries",
+			"datatables/TableTools.js",
+			"ArmarPadre",
+			"M_DespieceEntidad::",
+			"construirArbol",
+			"get_by_id",
+			"txtidProducto",
+			"idParte",
+			"parte",
+			"Parte",
+			"parte",
+			"IdProducto",
+			"Idproducto",
+			"idProducto",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"parte",
+			"Parte",
+			"idDespiece",
+			"dtDespiece",
+			"despieces",
+			"partes",
+			"Partes",
+			"partes"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"<?= base_url() ?>assets",
+			"<?= base_url() ?>",
+			"<?= base_url() ?>assets",
+			"movimiento"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/views/view_clientesDetalle.php",
+					"settings":
+					{
+						"buffer_size": 8554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6916,
+								6932
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2655.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/clientes.php",
+					"settings":
+					{
+						"buffer_size": 4041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1970,
+								1970
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1710.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/models/m_cliente.php",
+					"settings":
+					{
+						"buffer_size": 1497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								832,
+								832
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/js/js_clientesDetalle.js",
+					"settings":
+					{
+						"buffer_size": 5262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								509,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/E/Fuentes/sitios-php/aexo/aexo-mapas.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true
+}
