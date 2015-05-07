@@ -26,17 +26,21 @@
 								<tr>
 									<th>idCliente</th>
 									<th>Nombre</th>
+									<th>Apellido</th>
 									<th>Telefono</th>
+									<th>Email</th>
 								</tr>
 							</thead>
 							<tbody>
-								<? foreach ($clientes as $val){	?>	
+<!-- 								<? foreach ($clientes as $val){	?>	
 									<tr class="odd gradeX">
 										<td><?= $val->idCliente?></td>
 										<td><?= $val->nombre?></td>
+										<td><?= $val->apellido?></td>
 										<td><?= $val->telefono?></td>
+										<td><?= $val->email?></td>
 									</tr>
-								<?}?>
+								<?}?> -->
 							</tbody>
 						</table>
 					</div>
@@ -111,6 +115,8 @@ $( document ).ready(function() {
         "bProcessing": true,
         "bServerSide": false,
         "bAutoWidth": false,
+        "iDisplayStart" : 200,
+        "sAjaxSource": "<?= base_url() ?>index.php/clientes/loadClientes",
         "oTableTools": {
         	"sRowSelect": "single",
 			"sSwfPath": "<?= base_url() ?>assets/plugins/datatables-1-10-4/extensions/TableTools/swf/copy_csv_xls_pdf.swf",

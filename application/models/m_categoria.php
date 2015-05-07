@@ -1,7 +1,7 @@
 <?php
-class M_CategoriaIva extends CI_Model {
+class M_Categoria extends CI_Model {
 	// table name
-	private $tbl_categoriaIva= 'cliente_categoriaiva';
+	private $tbl_categoriaIva= 'categoria';
 
     function __construct()
     {
@@ -15,12 +15,12 @@ class M_CategoriaIva extends CI_Model {
 	}
 	// get proyectos with paging
 	function get_paged_list($limit = 10, $offset = 0){
-		$this->db->order_by('idCategoriaIva','asc');
+		$this->db->order_by('idCategoria','asc');
 		return $this->db->get($this->tbl_categoriaIva, $limit, $offset);
 	}
 	// get person by id
 	function get_by_id($id){
-		$this->db->where('idCategoriaIva', $id);
+		$this->db->where('idCategoria', $id);
 		return $this->db->get($this->tbl_categoriaIva);
 	}
 

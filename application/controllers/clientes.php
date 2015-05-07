@@ -10,12 +10,13 @@ class Clientes extends MY_Controller {
 		$this->load->model('M_Cliente','',TRUE);
 		$this->load->model('M_Provincia','',TRUE);
 		$this->load->model('M_Notificacion','',TRUE);
+		$this->load->model('M_Categoria','',TRUE);
 
 	}
 
 	public function index()
 	{
-		$clientes = $this->M_Cliente->get_paged_list(500, 0)->result();
+		$clientes = $this->M_Cliente->get_paged_list(100000, 0)->result();
 
 		$data['actionDelForm'] = 'clientes/traerClientes';
 		$data['clientes'] = $clientes;
@@ -25,21 +26,24 @@ class Clientes extends MY_Controller {
 		parent::cargarTemplate($data);
 	}
 
+	public function traerClientesJson(){
+		$clientes = $this->M_Cliente->get_paged_list(100000, 0)->result();
+
+		$data['actionDelForm'] = 'clientes/traerClientes';
+		$data['clientes'] = $clientes;
+		$out = $this->load->view('view_clientesList.php', $data, TRUE);
+		$data['cuerpo'] = $out;
+
+		$json = json_encode($data['clientes']);
+		echo $json;
+	}
+
 	public function loadClientes()
 	{
-		$keyword = $this->input->get('sSearch');
-		if (strlen($keyword) > 2){
-	        $this->datatables->select('idCliente,nombre,telefono')
-	        ->from('cliente')
-	        ->where("nombre like '%" . $keyword ."%'");
-	        
-	        $this->datatables->iDisplayLength=5;
-	        echo $this->datatables->generate();
-
-		}else{
-			echo "{}";
-		}
-
+        $this->datatables->select('idCliente,nombre, apellido,telefono, email')->from('cliente');
+    
+        $this->datatables->iDisplayLength(100000);
+        echo $this->datatables->generate();
 	}
 
 	public function nuevo(){
@@ -82,7 +86,7 @@ class Clientes extends MY_Controller {
 	}
 
 	public function modificar($idCliente=NULL){
-		$tiposClientes = $this->M_TipoCliente->get_paged_list(30, 0)->result();
+		$tiposClientes = $this->M_Categoria->get_paged_list(30, 0)->result();
 		$provincias = $this->M_Provincia->get_paged_list(30, 0)->result();
 
 		if ($idCliente == NULL)

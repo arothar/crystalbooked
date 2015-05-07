@@ -155,13 +155,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "application/controllers/clientes.php",
+			"settings":
+			{
+				"buffer_size": 3766,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/models/m_cliente.php",
+			"settings":
+			{
+				"buffer_size": 1446,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "application/views/view_clientesDetalle.php",
+			"settings":
+			{
+				"buffer_size": 7691,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 81.0,
 		"selected_items":
 		[
+			[
+				"comme",
+				"Toggle Comment"
+			],
 			[
 				"ident",
 				"Indentation: Reindent Lines"
@@ -176,10 +204,6 @@
 			],
 			[
 				"comm",
-				"Toggle Comment"
-			],
-			[
-				"comme",
 				"Toggle Comment"
 			],
 			[
@@ -259,7 +283,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 416.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -276,13 +300,23 @@
 	},
 	"file_history":
 	[
+		"/D/Working/php/www/crystalbooked/application/models/m_categoria.php",
+		"/D/Working/php/www/crystalbooked/application/models/m_provincia.php",
+		"/D/Working/php/www/crystalbooked/application/models/m_categoriaiva.php",
+		"/D/Working/php/www/aexo-manager/application/controllers/partes.php",
+		"/D/Working/php/www/aexo-manager/application/controllers/movimiento.php",
+		"/D/Working/php/www/crystalbooked/application/views/view_clientesList.php",
+		"/D/Working/php/www/crystalbooked/application/controllers/clientes.php",
+		"/D/Working/php/www/crystalbooked/application/libraries/Datatables.php",
+		"/D/Working/php/www/aexo-manager/application/controllers/mediosDePago.php",
+		"/C/Users/arothar/Downloads/themeforest/HTML/assets/js/application.js",
+		"/C/Users/arothar/Downloads/themeforest/HTML/assets/demo/demo-datatables.js",
+		"/C/Users/arothar/Downloads/themeforest/HTML/assets/demo/demo-paginations.js",
 		"/D/Working/php/www/crystalbooked/assets/js/js_clientesDetalle.js",
 		"/D/Working/php/www/crystalbooked/application/controllers/login.php",
 		"/D/Working/php/www/crystalbooked/application/core/MY_Controller.php",
 		"/D/Working/php/www/crystalbooked/application/models/m_cliente.php",
-		"/D/Working/php/www/crystalbooked/application/controllers/clientes.php",
 		"/D/Working/php/www/crystalbooked/application/config/database.php",
-		"/D/Working/php/www/crystalbooked/application/views/view_clientesList.php",
 		"/D/Working/php/www/crystalbooked/application/views/view_clientesDetalle.php",
 		"/D/Working/php/www/crystalbooked/application/views/view_template.php",
 		"/D/Working/php/www/aexo-manager/application/views/view_clientesDetalle.php",
@@ -393,17 +427,7 @@
 		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_movimientoDetalle.php",
 		"/E/Fuentes/sitios-php/PuertoPago/class/config.inc.php",
 		"/E/Fuentes/sitios-php/PuertoPago/clases/user.php",
-		"/E/Fuentes/sitios-php/PuertoPago/class/Database.class.php",
-		"/E/Fuentes/sitios-php/aexo-manager/application/models/m_movimiento.php",
-		"/E/Fuentes/sitios-php/aexo-manager/assets/plugins/datatables/jquery.dataTables.js",
-		"/C/Users/Alejandro/Desktop/jquery.dataTables.js",
-		"/E/Fuentes/sitios-php/aexo-manager/assets/plugins/datatables/dataTables.css",
-		"/E/Fuentes/sitios-php/aexo-manager/HTML/ui-labelsbadges.htm",
-		"/E/Fuentes/sitios-php/aexo-manager/application/views/view_calendarCaja.php",
-		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/demo/demo.js",
-		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/plugins/form-toggle/toggles.css",
-		"/E/Fuentes/sitios-php/aexo-manager/application/config/constants.php",
-		"/E/Fuentes/sitios-php/aexo-manager/HTML/assets/demo/demo-modals.js"
+		"/E/Fuentes/sitios-php/PuertoPago/class/Database.class.php"
 	],
 	"find":
 	{
@@ -425,6 +449,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"idCliente",
+			"iLength",
+			"iDisplayLength",
 			"ubicacion",
 			"parsley",
 			"requi",
@@ -549,10 +576,7 @@
 			"parte",
 			"Parte",
 			"parte",
-			"Parte",
-			"idDespiece",
-			"dtDespiece",
-			"despieces"
+			"Parte"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -574,8 +598,90 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/clientes.php",
+					"settings":
+					{
+						"buffer_size": 3766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								995,
+								995
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/models/m_cliente.php",
+					"settings":
+					{
+						"buffer_size": 1446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								838,
+								849
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/view_clientesDetalle.php",
+					"settings":
+					{
+						"buffer_size": 7691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7554,
+								7554
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

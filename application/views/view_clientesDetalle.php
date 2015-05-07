@@ -170,12 +170,12 @@ $( document ).ready(function() {
 	});
 
 	$("#tabUbicacion").click(function(){
-		<? if ($cliente != NULL) {?>
+		<? if ($cliente != NULL && $cliente->latitud != NULL) {?>
 			cargarMapa(<?=$cliente->latitud?>,<?=$cliente->longitud?>);
 			<?}else { ?>
 				cargarMapa(0,0);
 				<?} ?>
-			});
+		});
 });
 
 </script>

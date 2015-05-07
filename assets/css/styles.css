@@ -8509,7 +8509,7 @@ body.static-header {
   text-shadow: none !important;
   background-color: transparent !important;
   border: 0 !important;
-  background: url("../aexo-manager/img/logo_aexo_transparente_chico.png") no-repeat center center;
+  background: url("../aexo-manager/img/logo-crop.png") no-repeat center center;
   height: 30px;
   width: 110px;
 }

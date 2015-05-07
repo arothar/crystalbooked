@@ -242,11 +242,16 @@
     *
     * @return mixed
     */
+    var $iLength=0;
     protected function get_paging()
     {
       $iStart = $this->ci->input->post('iDisplayStart');
-      $iLength = $this->ci->input->post('iDisplayLength');
-      $this->ci->db->limit(($iLength != '' && $iLength != '-1')? $iLength : 100, ($iStart)? $iStart : 0);
+      $this->iLength = ($this->iLength != "") ? $this->iLength : $this->ci->input->post('iDisplayLength');
+      $this->ci->db->limit(($this->iLength != '' && $this->iLength != '-1')? $this->iLength : 100, ($iStart)? $iStart : 0);
+    }
+
+    public function iDisplayLength($len){
+      $this->iLength = $len;
     }
 
     /**

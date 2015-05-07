@@ -122,7 +122,7 @@ header('Content-Type: text/html; charset=utf-8');
 					<a id="rightmenu-trigger" class="tooltips" data-toggle="tooltip" data-placement="left" title="Toggle Infobar"></a>
 
 					<div class="navbar-header pull-left">
-						<a class="navbar-brand" href="index.htm">Aexo</a>
+						<a class="navbar-brand" href="index.htm">CrystalBooked</a>
 					</div>
 
 					<ul class="nav navbar-nav pull-right toolbar">

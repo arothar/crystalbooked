@@ -15,7 +15,7 @@ class M_Cliente extends CI_Model {
 		return $this->db->count_all($this->tbl_cliente);
 	}
 	// get proyectos with paging
-	function get_paged_list($limit = 10, $offset = 0){
+	function get_paged_list($limit = 100000, $offset = 0){
 		$this->db->order_by('idCliente','asc');
 		return $this->db->get($this->tbl_cliente, $limit, $offset);
 	}
@@ -28,9 +28,9 @@ class M_Cliente extends CI_Model {
 	}
 
 	function get_by_id($id){
-		$this->db->select('idCliente, nombre, cuit, calle, numero, 
-							idProvincia, localidad, codigoPostal, 
-							email, telefono, latitud, longitud');
+		$this->db->select('idCliente, nombre, apellido, cuit, calle, numero, 
+							idProvincia, localidad, codigoPostal, pisoDto,
+							email, telefono, latitud, longitud, fechaNacimiento');
 		$this->db->where("idCliente",$id);
 		$this->db->order_by('nombre','asc');
 		return $this->db->get($this->tbl_cliente);
