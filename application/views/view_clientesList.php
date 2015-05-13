@@ -25,6 +25,7 @@
 							<thead>
 								<tr>
 									<th>idCliente</th>
+									<th>Categoria</th>
 									<th>Nombre</th>
 									<th>Apellido</th>
 									<th>Telefono</th>

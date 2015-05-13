@@ -8509,9 +8509,9 @@ body.static-header {
   text-shadow: none !important;
   background-color: transparent !important;
   border: 0 !important;
-  background: url("../aexo-manager/img/logo-crop.png") no-repeat center center;
+  background: url("../aexo-manager/img/logo-chico.png") no-repeat center center;
   height: 30px;
-  width: 110px;
+  width: 150px;
 }
 @media (max-width: 480px) {
   ul.toolbar {
@@ -9629,7 +9629,7 @@ body.show-rightbar #chatarea .chatmsg.sent:after {
 /* Sidebar Menu */
 #sidebar {
   white-space: normal;
-  margin: 10px 0 0 0;
+  margin: 45px 0 0 0;
   padding-left: 0 !important;
 }
 #sidebar .badge {

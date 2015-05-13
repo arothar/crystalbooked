@@ -38,9 +38,23 @@
 						</div>
 						<div class="form-group">
 							<div class="row">	
-								<label class="col-md-2 control-label">Fecha de Nacimiento</label>
+								<label class="col-md-2 control-label">Categoria</label>
 								<div class="col-md-4">
-									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->fechaNacimiento :""; ?>" name="txtFechaNacimiento" id="txtFechaNacimiento" required="required" class="form-control" placeholder="Fecha de Nacimiento">
+									<select name="selCategoria" class="form-control" required="required"> 
+										<option value="">Categorias</option>
+
+										<?
+										foreach ($categorias as $val){
+											if ($cliente==NULL) 	{?>
+											<option  value='<?= $val->idCategoria?>'><?= $val->descripcion?></option>
+											<?
+										} else {
+											?>
+											<option  value='<?= $val->idCategoria?>' <?=($cliente->idCategoria == $val->idCategoria) ? "selected" :  "" ?>><?= $val->descripcion?></option>
+											<?
+										}
+										}?>
+									</select>
 								</div>
 								<label class="col-md-2 control-label">Cuit</label>
 								<div class="col-md-4">
@@ -50,13 +64,21 @@
 						</div>
 						<div class="form-group">
 							<div class="row">
+								<label class="col-md-2 control-label">Fecha de Nacimiento</label>
+								<div class="col-md-4">
+									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->fechaNacimiento :""; ?>" name="txtFechaNacimiento" id="txtFechaNacimiento" class="form-control" placeholder="Fecha de Nacimiento">
+								</div>
 								<label class="col-md-2 control-label">E-Mail</label>
 								<div class="col-md-4">
-									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->email :""; ?>" name="txtEmail" id="txtEmail" required="required" class="form-control" placeholder="E-Mail">
+									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->email :""; ?>" name="txtEmail" id="txtEmail" class="form-control" placeholder="E-Mail">
 								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
 								<label class="col-md-2 control-label">Telefono</label>
 								<div class="col-md-4">
-									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->telefono :""; ?>" name="txtTelefono" id="txtTelefono" required="required" class="form-control" placeholder="Telefono">
+									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->telefono :""; ?>" name="txtTelefono" id="txtTelefono" class="form-control" placeholder="Telefono">
 								</div>
 							</div>
 						</div>
@@ -66,7 +88,7 @@
 							<div class="row">
 								<label class="col-md-2 control-label">Domicilio</label>
 								<div class="col-md-10">
-									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->calle :""; ?>" name="txtDomicilio" id="txtDomicilio" required="required" class="form-control" placeholder="Domicilio">
+									<input type="text" value="<?= ($cliente!=NULL) ? $cliente->calle :""; ?>" name="txtDomicilio" id="txtDomicilio" class="form-control" placeholder="Domicilio">
 								</div>
 							</div>
 						</div>
@@ -92,7 +114,7 @@
 							</div>
 							<label class="col-md-2 control-label">Calle</label>
 							<div class="col-md-4">
-								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->calle :""; ?>" name="txtCalle" id="txtCalle" required="required" class="form-control" placeholder="Calle">
+								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->calle :""; ?>" name="txtCalle" id="txtCalle" class="form-control" placeholder="Calle">
 							</div>
 						</div>
 					</div>
@@ -100,11 +122,11 @@
 						<div class="row">
 							<label class="col-md-2 control-label">Numero</label>
 							<div class="col-md-4">
-								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->numero :""; ?>" name="txtNumero" id="txtNumero" required="required" class="form-control" placeholder="Numero">
+								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->numero :""; ?>" name="txtNumero" id="txtNumero" class="form-control" placeholder="Numero">
 							</div>
 							<label class="col-md-2 control-label">Localidad</label>
 							<div class="col-md-4">
-								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->localidad :""; ?>" name="txtLocalidad" id="txtLocalidad" required="required" class="form-control" placeholder="Localidad">
+								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->localidad :""; ?>" name="txtLocalidad" id="txtLocalidad" class="form-control" placeholder="Localidad">
 							</div>
 						</div>
 					</div>
@@ -112,11 +134,11 @@
 						<div class="row">
 							<label class="col-md-2 control-label">Piso y Dto</label>
 							<div class="col-md-4">
-								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->pisoDto :""; ?>" name="txtPisoDto" id="txtPisoDto" required="required" class="form-control" placeholder="Piso y Dto">
+								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->pisoDto :""; ?>" name="txtPisoDto" id="txtPisoDto" class="form-control" placeholder="Piso y Dto">
 							</div>
 							<label class="col-md-2 control-label">Cod. Postal</label>
 							<div class="col-md-4">
-								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->codigoPostal :""; ?>" name="txtCodigoPostal" id="txtCodigoPostal" required="required" class="form-control" placeholder="Cod. Postal">
+								<input type="text" value="<?= ($cliente!=NULL) ? $cliente->codigoPostal :""; ?>" name="txtCodigoPostal" id="txtCodigoPostal" class="form-control" placeholder="Cod. Postal">
 							</div>
 						</div>
 					</div>
@@ -151,6 +173,7 @@
 
 <script type='text/javascript' src='<?= base_url() ?>assets/plugins/bootbox/bootbox.min.js'></script> 
 <script type='text/javascript' src='<?= base_url() ?>assets/plugins/form-inputmask/jquery.inputmask.bundle.min.js'></script> 
+<script type='text/javascript' src='<?= base_url() ?>assets/plugins/form-parsley/parsley.min.js'></script> 
 <script type='text/javascript' src='<?= base_url() ?>assets/js/js_clientesDetalle.js'></script> 
 <script type='text/javascript' src='<?= base_url() ?>assets/js/defiant-latest.min.js'></script> 
 
@@ -165,6 +188,7 @@ $( document ).ready(function() {
 	});
 
 	$("#btnSubmit").click(function(){
+		$('#formBody').parsley( 'validate' );
 		$("#formBody").attr("action", "<?= base_url() ?>index.php/clientes/guardar");
 		$("#formBody").submit();
 	});

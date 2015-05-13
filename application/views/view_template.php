@@ -17,7 +17,7 @@ header('Content-Type: text/html; charset=utf-8');
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/styles.css?=121">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 
-	<link href='<?= base_url() ?>assets/demo/variations/default.css' rel='stylesheet' type='text/css' media='all' id='styleswitcher'> 
+	<link href='<?= base_url() ?>assets/demo/variations/header-gris.css' rel='stylesheet' type='text/css' media='all' id='styleswitcher'> 
 	<link href='<?= base_url() ?>assets/demo/variations/default.css' rel='stylesheet' type='text/css' media='all' id='headerswitcher'> 
 	
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries. Placeholdr.js enables the placeholder attribute -->
@@ -153,13 +153,6 @@ header('Content-Type: text/html; charset=utf-8');
 					<nav id="page-leftbar" role="navigation">
 						<!-- BEGIN SIDEBAR MENU -->
 						<ul class="acc-menu" id="sidebar">
-							<li id="search">
-								<a href="javascript:;"><i class="fa fa-search opacity-control"></i></a>
-								<form>
-									<input type="text" class="search-query" placeholder="Search...">
-									<button type="submit"><i class="fa fa-search"></i></button>
-								</form>
-							</li>
 							<li class="divider"></li>
 							<li><a href="index.htm"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
 							<li><a href="javascript:;"><i class="fa fa-shopping-cart"></i> <span>Ventas</span> </a>

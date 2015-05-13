@@ -40,7 +40,9 @@ class Clientes extends MY_Controller {
 
 	public function loadClientes()
 	{
-        $this->datatables->select('idCliente,nombre, apellido,telefono, email')->from('cliente');
+        $this->datatables->select('idCliente,categoria.descripcion,nombre, apellido,telefono, email')
+        ->from('cliente')
+        ->join('categoria', 'categoria.idCategoria = cliente.idCategoria');
     
         $this->datatables->iDisplayLength(100000);
         echo $this->datatables->generate();
@@ -48,12 +50,12 @@ class Clientes extends MY_Controller {
 
 	public function nuevo(){
 		// $tiposClientes = $this->M_TipoCliente->get_paged_list(30, 0)->result();
-		// $categoriasIva = $this->M_CategoriaIva->get_paged_list(30, 0)->result();
+		$categorias = $this->M_Categoria->get_paged_list(30, 0)->result();
 		$provincias = $this->M_Provincia->get_paged_list(30, 0)->result();
 
 		$data['cliente'] =  NULL;
 		// $data['tiposClientes'] =  $tiposClientes;
-		// $data['categoriasIva'] =  $categoriasIva;
+		$data['categorias'] =  $categorias;
 		$data['provincias'] =  $provincias;
 		
 		
@@ -73,7 +75,8 @@ class Clientes extends MY_Controller {
 		$data['codigoPostal'] = 	$this->input->post('txtCodigoPostal');
 		$data['telefono'] = 		$this->input->post('txtTelefono');
 		$data['email'] = 			$this->input->post('txtEmail');
-		$data['fechaNacimiento'] = 		$this->input->post('txtFechaNacimiento');
+		$data['fechaNacimiento'] = 	$this->input->post('txtFechaNacimiento');
+		$data['idCategoria'] = 		$this->input->post('selCategoria');
 
 		if ($this->input->post('txtIdCliente') != null){
 			$this->M_Cliente->update($this->input->post('txtIdCliente'),$data);	
@@ -86,7 +89,7 @@ class Clientes extends MY_Controller {
 	}
 
 	public function modificar($idCliente=NULL){
-		$tiposClientes = $this->M_Categoria->get_paged_list(30, 0)->result();
+		$categorias = $this->M_Categoria->get_paged_list(30, 0)->result();
 		$provincias = $this->M_Provincia->get_paged_list(30, 0)->result();
 
 		if ($idCliente == NULL)
@@ -95,8 +98,8 @@ class Clientes extends MY_Controller {
 		$cliente = $this->M_Cliente->get_by_id($idCliente)->result();
 
 		$data['cliente'] 	= $cliente[0];
-		$data['tiposClientes'] =  $tiposClientes;
-		$data['categoriasIva'] =  $categoriasIva;
+		$data['categorias'] =  $categorias;
+		//$data['categoriasIva'] =  $categoriasIva;
 		$data['provincias'] =  $provincias;
 		
 		$out = $this->load->view('view_clientesDetalle.php', $data, TRUE);
